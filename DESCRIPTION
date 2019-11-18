@@ -1,6 +1,6 @@
 Package: ymlthis
 Title: Write 'YAML' for 'R Markdown', 'bookdown', 'blogdown', and More
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Malcolm",
              family = "Barrett",
@@ -22,21 +22,21 @@ License: MIT + file LICENSE
 URL: https://ymlthis.r-lib.org, https://github.com/r-lib/ymlthis
 BugReports: https://github.com/r-lib/ymlthis/issues
 Depends: R (>= 3.2)
-Imports: crayon, fs, glue, magrittr, miniUI, purrr (>= 0.3.2), rlang,
-        rmarkdown, rstudioapi, shiny, shinyBS, stringr, usethis (>=
-        1.5.0), whoami, withr, yaml
-Suggests: blogdown, bookdown, covr, knitr, pkgdown, prettydoc,
-        roxygen2, spelling, testthat, xaringan
+Imports: crayon, fs, glue, magrittr, miniUI, purrr (>= 0.3.2), rlang
+        (>= 0.4.0), rmarkdown, rstudioapi, shiny, shinyBS, stringr,
+        usethis (>= 1.5.0), whoami, withr, yaml
+Suggests: blogdown, bookdown, covr, knitr, pkgdown, prettydoc, roxygen2
+        (>= 7.0.0), spelling, testthat, xaringan
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.0
 NeedsCompilation: no
-Packaged: 2019-09-23 19:13:57 UTC; malcolmbarrett
+Packaged: 2019-11-18 19:35:00 UTC; malcolmbarrett
 Author: Malcolm Barrett [aut, cre] (<https://orcid.org/0000-0003-0299-5825>),
   Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),
   RStudio [cph, fnd]
 Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-10-02 08:50:02 UTC
+Date/Publication: 2019-11-18 20:00:02 UTC
