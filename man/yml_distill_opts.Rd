@@ -38,7 +38,8 @@ yml_distill_author(
   name = yml_blank(),
   url = yml_blank(),
   affiliation = yml_blank(),
-  affiliation_url = yml_blank()
+  affiliation_url = yml_blank(),
+  orcid_id = yml_blank()
 )
 
 distill_listing(listing_name = "posts", slugs = NULL)
@@ -130,6 +131,8 @@ all formats support the \code{affiliation} field.}
 
 \item{affiliation_url}{the affiliation URL}
 
+\item{orcid_id}{the author's ORCID ID}
+
 \item{listing_name}{A character vector, the name of the listing}
 
 \item{slugs}{A character vector of the posts to include in the listing}
@@ -179,7 +182,7 @@ specifying the site build, like the output field and navbars, can also be
 placed in \verb{_site.yml}; see \code{\link[=yml_site_opts]{yml_site_opts()}} for further R Markdown website
 build options and \code{\link[=use_site_yml]{use_site_yml()}} for creating that file based on a \code{yml}
 object. distill's YAML options are discussed in greater detail in the
-\href{https://rstudio.github.io/distill}{articles on the distill website}.
+\href{https://rstudio.github.io/distill/}{articles on the distill website}.
 }
 \examples{
 post_listing <- distill_listing(
