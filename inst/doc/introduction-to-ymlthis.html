@@ -22,6 +22,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -469,7 +470,7 @@ a.sourceLine {
 <span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(path)</span>
 <span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="fu">use_navbar_yml</span>(navbar_yaml, <span class="at">path =</span> path)</span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/private/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/RtmpoBpQ9e/file17b126fc7aa1/_navbar.yml&#39;</span></span></code></pre></div>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/private/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/Rtmpxh3PXo/filecdc2635631a1/_navbar.yml&#39;</span></span></code></pre></div>
 <p>In addition to writing to files, you can save YAML to your <code>.Rprofile</code> using <code>options(ymlthis.defaults = &quot;{YAML}&quot;)</code>. <code>yml()</code> will return the stored YAML by default. If you pass a <code>yml</code> object to <code>use_yml_defaults()</code>, the code to do this will be placed on your clipboard, which you should paste into your <code>.Rprofile</code>. Open that file with <code>usethis::edit_r_profile()</code>. You can also set a default for body text for <code>use_rmarkdown()</code> by setting the <code>ymlthis.rmd_body()</code> option, e.g. <code>options(ymlthis.rmd_body = &quot;{your text}&quot;)</code> (or take advantage of <code>use_rmd_defaults()</code>). Together with specifying default YAML, <code>use_rmarkdown()</code> also serves as an ad-hoc way to make R Markdown templates.</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>old <span class="ot">&lt;-</span> <span class="fu">options</span>(</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">ymlthis.default_yml =</span> <span class="st">&quot;author: Malcolm Barrett</span></span>
@@ -487,7 +488,7 @@ a.sourceLine {
 <span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="co">#  use temporary path set above</span></span>
 <span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="fu">use_rmarkdown</span>(<span class="at">path =</span> <span class="fu">file.path</span>(path, <span class="st">&quot;analysis.Rmd&quot;</span>))</span>
-<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/RtmpoBpQ9e/file17b126fc7aa1/analysis.Rmd&#39;</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/Rtmpxh3PXo/filecdc2635631a1/analysis.Rmd&#39;</span></span>
 <span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co"># reset previous option defaults</span></span>
 <span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(old)</span></code></pre></div>

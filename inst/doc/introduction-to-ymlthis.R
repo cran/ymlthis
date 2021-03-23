@@ -3,7 +3,8 @@ library(ymlthis)
 oldoption <- options(devtools.name = "Malcolm Barrett")
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>", 
+  warning = FALSE
 )
 
 check <- function() "<span style='color:green'>\u2713</span>"
@@ -29,7 +30,7 @@ yml() %>%
 yml() %>% 
   yml_output(pdf_document())
 
-## -----------------------------------------------------------------------------
+## ---- warning = FALSE---------------------------------------------------------
 yml() %>% 
   yml_output(pdf_document(toc = TRUE))
 

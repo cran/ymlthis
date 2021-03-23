@@ -3,7 +3,8 @@ knitr::opts_chunk$set(
   echo = FALSE,
   message = FALSE,
   collapse = TRUE,
-  comment = ""
+  comment = "", 
+  warning = FALSE
 )
 
 ## ----pandoc_check, echo=FALSE-------------------------------------------------
