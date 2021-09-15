@@ -325,21 +325,7 @@ a.sourceLine {
 <div class="sourceCode" id="cb24"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Malcolm Barrett</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;`r format(Sys.Date())`&#39;</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">references</span><span class="kw">:</span></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> R-purrr</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> book</span></span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">author</span><span class="kw">:</span></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Henry</span></span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">given</span><span class="kw">:</span><span class="at"> Lionel</span></span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Wickham</span></span>
-<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">given</span><span class="kw">:</span><span class="at"> Hadley</span></span>
-<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">issued</span><span class="kw">:</span></span>
-<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">year</span><span class="kw">:</span><span class="at"> </span><span class="dv">2020</span></span>
-<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;Purrr: Functional programming tools&#39;</span></span>
-<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title-short</span><span class="kw">:</span><span class="at"> Purrr</span></span>
-<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">note</span><span class="kw">:</span><span class="at"> R package version 0.3.4</span></span>
-<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">URL</span><span class="kw">:</span><span class="at"> https://CRAN.R-project.org/package=purrr</span></span>
-<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
 <p>If you have an existing <code>.bib</code> file, but you want to specify it in the YAML, instead, you can convert it with <code>bib2yml()</code>. For instance, if you wrote a <code>.bib</code> file for the packages used in your document with <code>knitr::write_bib()</code>, <code>bib2yml()</code> will translate the file to YAML you can include directly in the metadata.</p>
 </div>
 </div>
@@ -470,7 +456,7 @@ a.sourceLine {
 <span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(path)</span>
 <span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="fu">use_navbar_yml</span>(navbar_yaml, <span class="at">path =</span> path)</span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/private/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/Rtmpxh3PXo/filecdc2635631a1/_navbar.yml&#39;</span></span></code></pre></div>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/private/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/RtmpNR2koB/file626b434f4c2/_navbar.yml&#39;</span></span></code></pre></div>
 <p>In addition to writing to files, you can save YAML to your <code>.Rprofile</code> using <code>options(ymlthis.defaults = &quot;{YAML}&quot;)</code>. <code>yml()</code> will return the stored YAML by default. If you pass a <code>yml</code> object to <code>use_yml_defaults()</code>, the code to do this will be placed on your clipboard, which you should paste into your <code>.Rprofile</code>. Open that file with <code>usethis::edit_r_profile()</code>. You can also set a default for body text for <code>use_rmarkdown()</code> by setting the <code>ymlthis.rmd_body()</code> option, e.g. <code>options(ymlthis.rmd_body = &quot;{your text}&quot;)</code> (or take advantage of <code>use_rmd_defaults()</code>). Together with specifying default YAML, <code>use_rmarkdown()</code> also serves as an ad-hoc way to make R Markdown templates.</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>old <span class="ot">&lt;-</span> <span class="fu">options</span>(</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">ymlthis.default_yml =</span> <span class="st">&quot;author: Malcolm Barrett</span></span>
@@ -488,10 +474,9 @@ a.sourceLine {
 <span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="co">#  use temporary path set above</span></span>
 <span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="fu">use_rmarkdown</span>(<span class="at">path =</span> <span class="fu">file.path</span>(path, <span class="st">&quot;analysis.Rmd&quot;</span>))</span>
-<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/var/folders/03/9x7925g54mncswxx06wpkxl00000gn/T/Rtmpxh3PXo/filecdc2635631a1/analysis.Rmd&#39;</span></span>
-<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co"># reset previous option defaults</span></span>
-<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(old)</span></code></pre></div>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; ✓ Writing &#39;/var/folders/w7/8yv1j00s0bb3pfhmqc_rvd980000gn/T/RtmpNR2koB/file626b434f4c2/analysis.Rmd&#39;</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a><span class="co"># reset previous option defaults</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(old)</span></code></pre></div>
 <table>
 <caption>ymlthis <code>use_*()</code> functions to write to <code>.yml</code> files</caption>
 <thead>
