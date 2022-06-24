@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 
 ## ----setup--------------------------------------------------------------------
 library(ymlthis)
-oldoption <- options(devtools.name = "Malcolm Barrett")
+oldoption <- options(devtools.name = "Malcolm Barrett", crayon.enabled = FALSE)
 
 ## ----pandoc_check, echo=FALSE-------------------------------------------------
 if (!rmarkdown::pandoc_available()) {

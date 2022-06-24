@@ -1,3 +1,7 @@
+# ymlthis 0.1.6
+* `yml_author()` now correctly accepts `yml_blank()` as needed (#71)
+* Fix issues with new shiny release (#80)
+
 # ymlthis 0.1.5
 * Update citeproc functionality to rely on newer rmarkdown functions
 

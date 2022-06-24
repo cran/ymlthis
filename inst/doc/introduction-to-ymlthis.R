@@ -1,6 +1,6 @@
 ## ----setup, echo=FALSE--------------------------------------------------------
 library(ymlthis)
-oldoption <- options(devtools.name = "Malcolm Barrett")
+oldoption <- options(devtools.name = "Malcolm Barrett", crayon.enabled = FALSE)
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>", 

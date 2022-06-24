@@ -7,7 +7,7 @@
 
 [![R-CMD-check](https://github.com/r-lib/ymlthis/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/ymlthis/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/r-lib/ymlthis/branch/master/graph/badge.svg)](https://codecov.io/gh/r-lib/ymlthis?branch=master)
+coverage](https://codecov.io/gh/r-lib/ymlthis/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/ymlthis?branch=main)
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![CRAN
@@ -67,7 +67,7 @@ yml() %>%
 #>   affiliation: RStudio
 #> - name: Hadley Wickham
 #>   affiliation: RStudio
-#> date: '2021-03-22'
+#> date: '2022-06-24'
 #> output:
 #>   word_document:
 #>     keep_md: true

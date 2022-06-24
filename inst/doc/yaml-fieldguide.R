@@ -21,7 +21,7 @@ if (!requireNamespace("roxygen2")) {
 
 ## ----setup--------------------------------------------------------------------
 library(ymlthis)
-oldoption <- options(devtools.name = "Malcolm Barrett")
+oldoption <- options(devtools.name = "Malcolm Barrett", crayon.enabled = FALSE)
 
 function_name <- function(x) {
   function_call <- x$call

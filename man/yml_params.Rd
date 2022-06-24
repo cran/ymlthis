@@ -30,7 +30,6 @@ shiny_slider(
   step = NULL,
   round = FALSE,
   format = NULL,
-  locale = NULL,
   ticks = TRUE,
   animate = FALSE,
   width = NULL,
@@ -118,9 +117,8 @@ number of digits (for example, 1 will round to the nearest 10, and -2 will
 round to the nearest .01). Any rounding will be applied after snapping to
 the nearest step.}
 
-\item{format}{Deprecated.}
-
-\item{locale}{Deprecated.}
+\item{format}{The format of the date to display in the browser. Defaults to
+\code{"yyyy-mm-dd"}.}
 
 \item{ticks}{\code{FALSE} to hide tick marks, \code{TRUE} to show them
 according to some simple heuristics.}
@@ -213,16 +211,7 @@ use \code{character(0)}.}
 
 \item{inline}{If \code{TRUE}, render the choices inline (i.e. horizontally)}
 
-\item{choiceNames}{List of names and values, respectively, that
-are displayed to the user in the app and correspond to the each choice (for
-this reason, \code{choiceNames} and \code{choiceValues} must have the same length).
-If either of these arguments is provided, then the other \emph{must} be provided
-and \code{choices} \emph{must not} be provided. The advantage of using both of these
-over a named list for \code{choices} is that \code{choiceNames} allows any type of UI
-object to be passed through (tag objects, icons, HTML code, ...), instead
-of just simple text. See Examples.}
-
-\item{choiceValues}{List of names and values, respectively, that
+\item{choiceNames, choiceValues}{List of names and values, respectively, that
 are displayed to the user in the app and correspond to the each choice (for
 this reason, \code{choiceNames} and \code{choiceValues} must have the same length).
 If either of these arguments is provided, then the other \emph{must} be provided
