@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   echo = FALSE,
   message = FALSE,
@@ -21,12 +21,12 @@ if (!rmarkdown::pandoc_available()) {
 yml(date = FALSE) %>% 
   asis_yaml_output()
 
-## ---- warning = FALSE---------------------------------------------------------
+## ----warning = FALSE----------------------------------------------------------
 yml_empty() %>% 
   yml_output(pdf_document(toc = TRUE)) %>% 
   asis_yaml_output()
 
-## ---- warning = FALSE---------------------------------------------------------
+## ----warning = FALSE----------------------------------------------------------
 yml_empty() %>% 
   yml_output(pdf_document(toc = TRUE)) %>% 
   draw_yml_tree()
@@ -41,7 +41,7 @@ yml_empty() %>%
   yml_output(html_document()) %>% 
   asis_yaml_output()
 
-## ---- warning = FALSE---------------------------------------------------------
+## ----warning = FALSE----------------------------------------------------------
 yml_empty() %>% 
   yml_output(html_document(), pdf_document(toc = TRUE)) %>% 
   asis_yaml_output()
@@ -77,6 +77,6 @@ yml_empty() %>%
   yml_params(x = "yes") %>% 
   asis_yaml_output()
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 options(oldoption)
 

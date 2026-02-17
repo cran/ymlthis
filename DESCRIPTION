@@ -1,6 +1,6 @@
 Package: ymlthis
 Title: Write 'YAML' for 'R Markdown', 'bookdown', 'blogdown', and More
-Version: 0.1.7
+Version: 1.0.0
 Authors@R: c(
     person("Malcolm", "Barrett", , "malcolmbarrett@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0299-5825")),
@@ -26,12 +26,13 @@ VignetteBuilder: knitr
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
-RoxygenNote: 7.2.0
+RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2022-08-05 12:14:40 UTC; malcolmbarrett
-Author: Malcolm Barrett [aut, cre] (<https://orcid.org/0000-0003-0299-5825>),
-  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),
+Packaged: 2026-02-16 23:54:06 UTC; malcolmbarrett
+Author: Malcolm Barrett [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-0299-5825>),
+  Richard Iannone [aut] (ORCID: <https://orcid.org/0000-0003-3925-190X>),
   RStudio [cph, fnd]
 Maintainer: Malcolm Barrett <malcolmbarrett@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-08-05 15:00:02 UTC
+Date/Publication: 2026-02-17 06:10:02 UTC

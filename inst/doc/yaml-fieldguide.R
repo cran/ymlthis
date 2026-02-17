@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   echo = FALSE,
   message = FALSE,
@@ -130,6 +130,6 @@ fields_df %>%
 fields_df %>% 
   filter_kable("rsconnect", caption = "RStudio Connect Scheduled Email YAML")
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 options(oldoption)
 

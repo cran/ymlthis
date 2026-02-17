@@ -21,7 +21,7 @@ a \code{yml} object
 }
 \description{
 The \code{runtime} field lets you use Shiny in your R Markdown document, making it
-interactive. See the \href{https://bookdown.org/yihui/rmarkdown/interactive-documents.html}{R Markdown book} for
+interactive. See the \href{https://yihui.org/rmarkdown/interactive-documents.html}{R Markdown book} for
 examples.
 }
 \examples{
@@ -37,9 +37,9 @@ Other yml:
 \code{\link{draw_yml_tree}()},
 \code{\link{has_field}()},
 \code{\link{read_json}()},
+\code{\link{use_yml}()},
 \code{\link{use_yml_defaults}()},
 \code{\link{use_yml_file}()},
-\code{\link{use_yml}()},
 \code{\link{yml_author}()},
 \code{\link{yml_blogdown_opts}()},
 \code{\link{yml_bookdown_opts}()},

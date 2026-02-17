@@ -30,7 +30,7 @@ yml() %>%
 yml() %>% 
   yml_output(pdf_document())
 
-## ---- warning = FALSE---------------------------------------------------------
+## ----warning = FALSE----------------------------------------------------------
 yml() %>% 
   yml_output(pdf_document(toc = TRUE))
 
@@ -197,6 +197,6 @@ x %>%
 x %>% 
   yml_pluck("output", "pdf_document")
 
-## ---- include=FALSE-----------------------------------------------------------
+## ----include=FALSE------------------------------------------------------------
 options(oldoption)
 

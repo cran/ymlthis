@@ -1,3 +1,18 @@
+# ymlthis 1.0.0
+
+## Lifecycle
+
+* ymlthis is now retired. Only changes necessary to keep it on CRAN will be
+  made. Quarto now provides excellent YAML support, making a specialized
+  YAML-writing package less necessary.
+
+## Bug fixes
+
+* Fixed deprecation warning from purrr: replaced `vec_depth()` with
+  `pluck_depth()` (#91).
+* Fixed bug in `setup_chunk()` where `chunk_code` expressions were not
+  properly captured (#88, thanks @dchiu911).
+
 # ymlthis 0.1.7
 * Fix typo in add-in checking for miniUI (#84, #85, thanks @tonycmac &
   @lquayle88)
@@ -13,9 +28,9 @@
 * Minor changes to address upcoming changes in shiny 1.6
 
 # ymlthis 0.1.2
- 
+
 * updated roxygen2 rendering and removed unnecessary `...` description from `yml_pagedown_opts()`
-* fixed bug where removing a blank line did not work because it called the wrong object (issue #52, thanks @dchiu911) 
+* fixed bug where removing a blank line did not work because it called the wrong object (issue #52, thanks @dchiu911)
 
 # ymlthis 0.1.1
 
